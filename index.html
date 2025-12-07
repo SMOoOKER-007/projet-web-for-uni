@@ -1,179 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>SANTORINI</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTORINI Coffee Shop</title>
+    <link rel="shortcut icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img id="img" src="assets/logo.png" alt="Ahbab Coffee ☕">
-        </div>
-        <hr>
-        <div class="navbar">
-            <ul>
-                <li><a href="https://www.instagram.com/ahbabcoffee?igsh=MTB0bDJ3bTEzbm41NQ==" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100089816173999&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
-                <li><a href="https://wa.me/+905419754743" target="_blank">Whatsapp</a></li>
+    <!-- Sticky Navigation -->
+    <nav class="navbar sticky">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.png" alt="Santorini Coffee Logo" id="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <hr>
-    </header>
-    <center>
-    <div id="main">
-        <div class="group">
-            <h1 id="label">CLASSIC VERSION</h1>
-            <table>
-                <tr>
-                    <td>ESPRESSO</td>
-                    <td>50 ₺</td>
-                </tr>
-                <tr>
-                    <td>DOUBLE ESPRESSO</td>
-                    <td>50 ₺</td>
-                </tr>
-                <tr>
-                    <td>AMERICANO</td>
-                    <td>50 ₺</td>
-                </tr>
-            </table>
-        </div>
-        <div class="group">
-            <h1 id="label">RICH TEA</h1>
-            <table>
-                <tr>
-                    <td>GREEN TEA</td>
-                    <td>35 ₺</td>
-                </tr>
-                <tr>
-                    <td>MASALA TEA</td>
-                    <td>35 ₺</td>
-                </tr>
-                <tr>
-                    <td>MATCHA</td>
-                    <td>60 ₺</td>
-                </tr>
-                <tr>
-                    <td>TURKISH TEA</td>
-                    <td>20 ₺</td>
-                </tr>
-            </table>
-        </div>
-        <div class="group">
-            <h1 id="label">COFFEE</h1>
-            <table>
-                <tr>
-                    <td>FILTER COFFEE</td>
-                    <td>50 ₺</td>
-                </tr>
-                <tr>
-                    <td>TURKISH COFFEE</td>
-                    <td>50 ₺</td>
-                </tr>
-                <tr>
-                    <td>CHEMEX</td>
-                    <td>70 ₺</td>
-                </tr>
-            </table>
-        </div>
-        <div class="group">
-            <h1 id="label">WITH MILK</h1>
-            <table>
-                <tr>
-                    <td>ALMOND LATTE</td>
-                    <td>85 ₺</td>
-                </tr>
-                <tr>
-                    <td>OAT LATTE</td>
-                    <td>85 ₺</td>
-                </tr>
-                <tr>
-                    <td>SOYA LATTE</td>
-                    <td>85 ₺</td>
-                </tr>
-                <tr>
-                    <td>CAPPUCCINO</td>
-                    <td>70 ₺</td>
-                </tr>
-                <tr>
-                    <td>CARTADO</td>
-                    <td>65 ₺</td>
-                </tr>
-                <tr>
-                    <td>FLAT WHITE</td>
-                    <td>70 ₺</td>
-                </tr>
-            </table>
-        </div>
-        <div class="group">
-            <h1 id="label">COFFEE COCKTAILS</h1>
-            <table>
-                <tr>
-                    <td>WHITE MOCHA</td>
-                    <td>75 ₺</td>
-                </tr>
-                <tr>
-                    <td>FRAPPE</td>
-                    <td>75 ₺</td>
-                </tr>
-                <tr>
-                    <td>AFFOGATO</td>
-                    <td>70 ₺</td>
-                </tr>
-                <tr>
-                    <td>HOT CHOCOLATE</td>
-                    <td>50 ₺</td>
-                </tr>
-                <tr>
-                    <td>AHBAB'S</td>
-                    <td>85 ₺</td>
-                </tr>
-                <tr>
-                    <td>MOCHA</td>
-                    <td>75 ₺</td>
-                </tr>
-            </table>
-        </div>
-        <div class="group">
-            <h1 id="label">LATTE</h1>
-            <table>
-                <tr>
-                    <td>COFFEE LATTE</td>
-                    <td>70 ₺</td>
-                </tr>
-                <tr>
-                    <td>SALTED CARAMEL</td>
-                    <td>80 ₺</td>
-                </tr>
-                <tr>
-                    <td>CARAMEL LATTE</td>
-                    <td>80 ₺</td>
-                </tr>
-                <tr>
-                    <td>VANILIN LATTE</td>
-                    <td>80 ₺</td>
-                </tr>
-                <tr>
-                    <td>CHAI TEA LATTE</td>
-                    <td>70 ₺</td>
-                </tr>
-                <tr>
-                    <td>MATCHA LATTE</td>
-                    <td>90 ₺</td>
-                </tr>
+    </nav>
 
-            </table>
+    <!-- Hero/Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="Santorini Coffee Logo" class="hero-logo">
+            <h1>Welcome to Santorini Coffee</h1>
+            <p>Premium coffee and tea inspired by the beauty of Greek islands</p>
+            <a href="#menu" class="btn">View Menu</a>
         </div>
+    </section>
 
-    </div>
-</center>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>Menu</h2>
+        </div>
+        <div class="menu-container">
+            <div class="group">
+                <h3 class="menu-category">CLASSIC VERSION</h3>
+                <table>
+                    <tr>
+                        <td>ESPRESSO</td>
+                        <td>3 TND</td>
+                    </tr>
+                    <tr>
+                        <td>DOUBLE ESPRESSO</td>
+                        <td>4 TND</td>
+                    </tr>
+                    <tr>
+                        <td>AMERICANO</td>
+                        <td>2.5 TND</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="group">
+                <h3 class="menu-category">RICH TEA</h3>
+                <table>
+                    <tr>
+                        <td>GREEN TEA</td>
+                        <td>5 TND</td>
+                    </tr>
+                    <tr>
+                        <td>MASALA TEA</td>
+                        <td>15 TND</td>
+                    </tr>
+                    <tr>
+                        <td>MATCHA</td>
+                        <td>19 TND</td>
+                    </tr>
+                    <tr>
+                        <td>TEA</td>
+                        <td>4 TND</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="group">
+                <h3 class="menu-category">COFFEE</h3>
+                <table>
+                    <tr>
+                        <td>FILTER COFFEE</td>
+                        <td>5 TND</td>
+                    </tr>
+                    <tr>
+                        <td>TURKISH COFFEE</td>
+                        <td>7 TND</td>
+                    </tr>
+                    <tr>
+                        <td>SANTORINI COFFEE</td>
+                        <td>10 TND</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="group">
+                <h3 class="menu-category">WITH MILK</h3>
+                <table>
+                    <tr>
+                        <td>ALMOND LATTE</td>
+                        <td>7 TND</td>
+                    </tr>
+                    <tr>
+                        <td>OAT LATTE</td>
+                        <td>8 TND</td>
+                    </tr>
+                    <tr>
+                        <td>SOYA LATTE</td>
+                        <td>12 TND</td>
+                    </tr>
+                    <tr>
+                        <td>CAPPUCCINO</td>
+                        <td>2.5 TND</td>
+                    </tr>
+                    <tr>
+                        <td>CARTADO</td>
+                        <td>2.6 TND</td>
+                    </tr>
+                    <tr>
+                        <td>FLAT WHITE</td>
+                        <td>10 TND</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="group">
+                <h3 class="menu-category">COFFEE COCKTAILS</h3>
+                <table>
+                    <tr>
+                        <td>WHITE MOCHA</td>
+                        <td>26 TND</td>
+                    </tr>
+                    <tr>
+                        <td>FRAPPE</td>
+                        <td>15 TND</td>
+                    </tr>
+                    <tr>
+                        <td>AFFOGATO</td>
+                        <td>8.5 TND</td>
+                    </tr>
+                    <tr>
+                        <td>HOT CHOCOLATE</td>
+                        <td>20 TND</td>
+                    </tr>
+                    <tr>
+                        <td>SANTORINI'S</td>
+                        <td>30 TND</td>
+                    </tr>
+                    <tr>
+                        <td>MOCHA</td>
+                        <td>29 TND</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="group">
+                <h3 class="menu-category">LATTE</h3>
+                <table>
+                    <tr>
+                        <td>COFFEE LATTE</td>
+                        <td>3 TND</td>
+                    </tr>
+                    <tr>
+                        <td>SALTED CARAMEL</td>
+                        <td>6 TND</td>
+                    </tr>
+                    <tr>
+                        <td>CARAMEL LATTE</td>
+                        <td>8 TND</td>
+                    </tr>
+                    <tr>
+                        <td>VANILIN LATTE</td>
+                        <td>10 TND</td>
+                    </tr>
+                    <tr>
+                        <td>CHAI TEA LATTE</td>
+                        <td>13 TND</td>
+                    </tr>
+                    <tr>
+                        <td>MATCHA LATTE</td>
+                        <td>20 TND</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>About Santorini Coffee</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Welcome to Santorini Coffee, a cozy haven nestled in the heart of the city, inspired by the breathtaking beauty of the Greek islands. Our journey began with a simple passion for exceptional coffee and a dream to create a space where people could escape the hustle and bustle of daily life.</p>
+                
+                <h3>Our Atmosphere</h3>
+                <p>Step into our café and be transported to the charming streets of Santorini. With warm hues reminiscent of sunsets over the Aegean Sea and comfortable seating arrangements, we've crafted an ambiance that invites relaxation and conversation. The gentle aroma of freshly roasted beans fills the air, creating an olfactory journey that complements our beverages perfectly.</p>
+                
+                <h3>What Makes Us Special</h3>
+                <p>At Santorini Coffee, we believe in the art of coffee-making. Our skilled baristas are trained in the craft of brewing the perfect cup, using premium beans sourced directly from sustainable farms. We offer an extensive selection of specialty coffees, artisan teas, and handcrafted beverages that cater to every palate. Beyond our drinks, we pride ourselves on fostering a sense of community, hosting regular events like open mic nights and coffee cupping sessions.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/logo.png" alt="Santorini Coffee Shop Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <a href="https://yassinedhouib8.wordpress.com" target="_blank"> &lt;The Web Developper\&gt;</a>
+        <p>&copy; 2025 Santorini Coffee. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
