@@ -6,6 +6,38 @@
     <title>SANTORINI Coffee Shop</title>
     <link rel="shortcut icon" href="assets/icon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS styling -->
+    <style>
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .product-card {
+            background-color: rgba(240, 248, 255, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <!-- Sticky Navigation -->
@@ -23,6 +55,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -42,6 +80,31 @@
             <a href="#menu" class="btn">View Menu</a>
         </div>
     </section>
+
+    <!-- Featured Products -->
+    <div class="section-title">
+        <h2>Featured Products</h2>
+    </div>
+    
+    <div class="featured-products">
+        <div class="product-card">
+            <img src="assets/logo.png" alt="Greek Coffee">
+            <h3>Greek Coffee</h3>
+            <p>Traditional Greek coffee prepared in a briki</p>
+        </div>
+        
+        <div class="product-card">
+            <img src="assets/logo.png" alt="Santorini Blend">
+            <h3>Santorini Blend</h3>
+            <p>Our signature blend with notes of citrus and honey</p>
+        </div>
+        
+        <div class="product-card">
+            <img src="assets/logo.png" alt="Island Tea">
+            <h3>Island Tea</h3>
+            <p>Herbal tea infused with Mediterranean herbs</p>
+        </div>
+    </div>
 
     <!-- Menu Section -->
     <section id="menu" class="menu-section">
