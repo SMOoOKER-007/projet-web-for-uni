@@ -219,22 +219,27 @@ body {
     border-collapse: collapse;
 }
 
-.group td {
+.group td, .group th {
     padding: 12px 15px;
     border-bottom: 1px dashed rgba(25, 45, 72, 0.3); /* Custom blue with transparency */
 }
 
-.group td:first-child {
+.group td:first-child, .group th:first-child {
     font-weight: bold;
 }
 
-.group td:last-child {
+.group td:last-child, .group th:last-child {
     text-align: right;
     color: #192d48; /* Custom blue */
     font-weight: bold;
 }
 
-.group tr:last-child td {
+.group th {
+    background-color: rgba(25, 45, 72, 0.1);
+    text-align: left;
+}
+
+.group tr:last-child td, .group tr:last-child th {
     border-bottom: none;
 }
 
